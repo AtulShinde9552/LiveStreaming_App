@@ -22,7 +22,7 @@ const Room = () => {
 
   let myMeeting = async (element) => {
     const appID = parseInt(import.meta.env.VITE_APPID);
-    const serverSecret = import.meta.env.VITE_SERVERSECRET;
+    const serverSecret = import.meta.env.VITE_SERVERSECRET.toString();
     const kitToken =  ZegoUIKitPrebuilt.generateKitTokenForTest(appID, serverSecret, roomId,  randomID(5), randomID(5));
     // Create instance object from Kit Token.
  const zp = ZegoUIKitPrebuilt.create(kitToken);
