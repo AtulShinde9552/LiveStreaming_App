@@ -35,7 +35,7 @@ const Room = () => {
   },
   sharedLinks:[{
   name: "Copy Link",
-  url: `http://localhost:5174/room/${roomId}`
+  url: `https://live-streaming-app-plum.vercel.app/room/${roomId}`
   }]
 });
 
