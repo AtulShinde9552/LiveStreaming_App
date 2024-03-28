@@ -16,7 +16,10 @@ const Home = () => {
     };
 
     return (
+        <>
+          <h1 className='Heading'>Live Streaming App</h1>
         <div className="container">
+            <span className='subHeading'>Enter any random name into the input field, then convert it into a shareable Streaming link</span>
             <input
                 className="input-field"
                 type="text"
@@ -30,6 +33,8 @@ const Home = () => {
             <button className="button" onClick={handleJoin}>Join</button>
             {errorMessage && <p className="error-message">{errorMessage}</p>}
         </div>
+        </>
+          
     );
 };
 
